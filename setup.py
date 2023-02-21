@@ -6,7 +6,7 @@
 #                   |  __/| | | (_) | || (_) | (_| (_) | |                     #
 #                   |_|   |_|  \___/ \__\___/ \___\___/|_|                     #
 #                                                                              #
-#           == A Simple ASCII Header Generator for Network Protocols ==        #
+#         == ASCII and Unicode Header Generator for Network Protocols ==       #
 #                                                                              #
 ################################################################################
 #                                                                              #
@@ -58,8 +58,8 @@
 from distutils.core import setup
 
 setup(
-    name='protocol',
-    version='0.1',
-    scripts=['protocol'],
+    name='protocolplus',
+    version='0.2',
+    scripts=['protocolplus'],
     py_modules=[]
 )

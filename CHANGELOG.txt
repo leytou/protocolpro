@@ -5,7 +5,7 @@
 #                   |  __/| | | (_) | || (_) | (_| (_) | |                     #
 #                   |_|   |_|  \___/ \__\___/ \___\___/|_|                     #
 #                                                                              #
-#           == A Simple ASCII Header Generator for Network Protocols ==        #
+#         == ASCII and Unicode Header Generator for Network Protocols ==       #
 #                                                                              #
 ################################################################################
 #                                                                              #
@@ -17,3 +17,6 @@
 
 - 2015-08-16: Added a number of Industrial Control Protocols. This patch was
               submitted by Jean-Christophe (https://github.com/phocean)
+
+- 2023-02-21: Added --unicode, -u for generating unicode box characters instead of ASCII
+			  submitted by Tom pusateri <pusateri@bangj.com>

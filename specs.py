@@ -5,7 +5,7 @@
 #                   |  __/| | | (_) | || (_) | (_| (_) | |                     #
 #                   |_|   |_|  \___/ \__\___/ \___\___/|_|                     #
 #                                                                              #
-#           == A Simple ASCII Header Generator for Network Protocols ==        #
+#         == ASCII and Unicode Header Generator for Network Protocols ==       #
 #                                                                              #
 ################################################################################
 #                                                                              #
