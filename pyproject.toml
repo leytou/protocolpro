@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protocolplus"
+version = "0.2"
+authors = [
+  { name="Luis MartinGarcia", email="luis@luismg.com" },
+  { name="Tom Pusateri", email="pusateri@bangj.com" },
+]
+description = "ASCII and Unicode Header Generator for Network Protocols"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+protocolplus = "protocolplus:main"
+
+[project.urls]
+"Homepage" = "https://github.com/pusateri/protocolplus"
+"Bug Tracker" = "https://github.com/pusateri/protocolplus/issues"
