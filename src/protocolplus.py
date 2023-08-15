@@ -218,15 +218,17 @@ class Protocol():
         """
         lines = ["", ""]
         if self.do_print_top_tens is True:
+            lines[0] += " "
             for i in range(0, self.bits_per_line):
-                if str(i)[-1:] == "0":
-                    lines[0] += " %s" % str(i)[0]
-                else:
-                    lines[0] += "  "
+                if i % 8 == 0 and ((i+8)>=self.bits_per_line):
+                    #lines[0] += "{:<16}".format(str(i))
+                    lines[0] += "{:<8}{:>8}".format(str(i),str(self.bits_per_line-1))
+                elif i % 8 == 0:
+                    lines[0] += "{:<16}".format(str(i))
             lines[0] += "\n"
         if self.do_print_top_units is True:
             for i in range(0, self.bits_per_line):
-                lines[1] += " %s" % str(i)[-1:]
+                lines[1] += " %s" % (i%8)
             # lines[1] += "\n"
         result = "".join(lines)
         return result if len(result) > 0 else None
