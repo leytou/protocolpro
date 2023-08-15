@@ -1,13 +1,14 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0","wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "protocolplus"
-version = "0.2"
+name = "protocolpro"
+version = "0.3"
 authors = [
   { name="Luis MartinGarcia", email="luis@luismg.com" },
   { name="Tom Pusateri", email="pusateri@bangj.com" },
+  { name="Leytou", email="hi_litao@163.com" },
 ]
 description = "ASCII and Unicode Header Generator for Network Protocols"
 readme = "README.md"
@@ -19,8 +20,8 @@ classifiers = [
 ]
 
 [project.scripts]
-protocolplus = "protocolplus:main"
+protocolpro = "protocolpro:main"
 
 [project.urls]
-"Homepage" = "https://github.com/pusateri/protocolplus"
-"Bug Tracker" = "https://github.com/pusateri/protocolplus/issues"
+"Homepage" = "https://github.com/leytou/protocolpro"
+"Bug Tracker" = "https://github.com/leytou/protocolpro/issues"
