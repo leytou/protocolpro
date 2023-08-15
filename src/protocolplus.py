@@ -594,7 +594,8 @@ class Protocol():
                                 lines.append(
                                     self._get_horizontal(textline=textline, fields=proto_fields, bottom=bottom)
                                 )
-
+                        # increment field counter
+                        fields_done+=1
                 # Case 2: We are not at the beginning of the line and we need
                 # to print something that does not fit in the current line
                 else:
